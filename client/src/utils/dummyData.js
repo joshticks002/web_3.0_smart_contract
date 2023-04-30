@@ -2,7 +2,7 @@
 export default [
   {
     id: 1,
-    url: "../../images/mr-avlan.jpg",
+    url: "/images/mr-avlan.jpg",
     message: "",
     timestamp: "04/18/2023, 1:45:32 PM",
     addressFrom: "0xCF8e569A97C423952DdFf902375C7C76549A6A90",
@@ -11,7 +11,7 @@ export default [
   },
   {
     id: 2,
-    url: "../../images/geran.jpg",
+    url: "/images/geran.jpg",
     message: "",
     timestamp: "04/19/2023, 2:15:46 PM",
     addressFrom: "0xCF8e569A97C423952DdFf902375C7C76549A6A90",
@@ -20,7 +20,7 @@ export default [
   },
   {
     id: 3,
-    url: "../../images/bear.jpg",
+    url: "/images/bear.jpg",
     message: "",
     timestamp: "05/20/2023, 8:25:38 PM",
     addressFrom: "0xCF8e569A97C423952DdFf902375C7C76549A6A90",
@@ -29,7 +29,7 @@ export default [
   },
   {
     id: 4,
-    url: "../../images/ray.jpg",
+    url: "/images/ray.jpg",
     message: "",
     timestamp: "05/20/2023, 8:30:23 PM",
     addressFrom: "0xCF8e569A97C423952DdFf902375C7C76549A6A90",
@@ -38,7 +38,7 @@ export default [
   },
   {
     id: 5,
-    url: "../../images/richard.jpg",
+    url: "/images/richard.jpg",
     message: "",
     timestamp: "05/28/2023, 3:45:00 PM",
     addressFrom: "0xCF8e569A97C423952DdFf902375C7C76549A6A90",
@@ -47,7 +47,7 @@ export default [
   },
   {
     id: 6,
-    url: "../../images/karsten.jpg",
+    url: "/images/karsten.jpg",
     message: "",
     timestamp: "05/30/2023, 6:08:16 AM",
     addressFrom: "0xCF8e569A97C423952DdFf902375C7C76549A6A90",
