@@ -31,7 +31,7 @@ export const TransactionsProvider = ({ children }) => {
       if (ethereum) {
         const transactionsContract = createEthereumContract();
 
-        const availableTransactions = await transactionsContract.getAllTransactions();
+        const availableTransactions = await transactionsContract.getTransactions();
 
         const structuredTransactions = availableTransactions.map((transaction) => ({
           addressTo: transaction.receiver,
@@ -53,7 +53,7 @@ export const TransactionsProvider = ({ children }) => {
     }
   };
 
-  const checkIfWalletIsConnect = async () => {
+  const checkIfWalletIsConnected = async () => {
     try {
       if (!ethereum) return alert("Please install MetaMask.");
 
@@ -113,12 +113,12 @@ export const TransactionsProvider = ({ children }) => {
           params: [{
             from: currentAccount,
             to: addressTo,
-            gas: "0x5208",
+            gas: "0x5208", // 0.000021 ether
             value: parsedAmount._hex,
           }],
         });
 
-        const transactionHash = await transactionsContract.addToBlockchain(addressTo, parsedAmount, message, keyword);
+        const transactionHash = await transactionsContract.addToBlockChain(addressTo, parsedAmount, message, keyword);
 
         setIsLoading(true);
         console.log(`Loading - ${transactionHash.hash}`);
@@ -141,7 +141,7 @@ export const TransactionsProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    checkIfWalletIsConnect();
+    checkIfWalletIsConnected();
     checkIfTransactionsExists();
   }, [transactionCount]);
 
